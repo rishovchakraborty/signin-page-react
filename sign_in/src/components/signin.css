@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.header .text {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+.header .underline {
+    width: 60px;
+    height: 4px;
+    background: #6a11cb;
+    margin: 10px auto 20px;
+    border-radius: 2px;
+}
+
+.inputs .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border 0.3s;
+}
+
+.inputs .input:hover {
+    border-color: #6a11cb;
+}
+
+.inputs .input img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.inputs .input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+.forgot-passward {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.forgot-passward span {
+    color: #6a11cb;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    width: 30%;
+    text-align: center;
+}
+
+.submit:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
