@@ -1,12 +1,13 @@
 import React from "react";
 import './signin.css'
-import user_icon from '../assets/person.png'
-import email_icon from '../assets/email.png'
-import password_icon from '../assets/password.png'
-
+import user_icon from '../../assets/person.png'
+import email_icon from '../../assets/email.png'
+import password_icon from '../../assets/password.png'
+import { useNavigate } from 'react-router-dom';
 
 
 const Signin = () => {
+    const navigate = useNavigate();
     return (
         <div>
         <div className="container">
@@ -34,10 +35,10 @@ const Signin = () => {
                 Lost Password? <span>Click Here!</span>
             </div>
             <div className="submit-container">
-                <div className="submit">
+                <div className="submit" onClick={() => navigate('/signin')}>
                     Sign Up
                 </div>
-                <div className="submit">
+                <div className="submit"  onClick={() => navigate('/login')}>
                     Log In
                 </div>
             </div>
